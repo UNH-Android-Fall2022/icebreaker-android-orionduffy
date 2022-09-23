@@ -20,10 +20,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnGetQuestion.setOnClickListener {
             Log.d(TAG, "Button Get Question was pressed")
+            getQuestionsFromFirebase()
         }
 
         binding.btnSubmit.setOnClickListener {
             Log.d(TAG, "Button Submit was pressed")
         }
+    }
+
+    private fun getQuestionsFromFirebase () {
+        Log.d(TAG, "Fetching questions from database...")
     }
 }
