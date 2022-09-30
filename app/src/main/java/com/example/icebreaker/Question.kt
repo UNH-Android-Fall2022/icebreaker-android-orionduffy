@@ -1,4 +1,3 @@
 package com.example.icebreaker
 
-class Question {
-}
+data class Question(val text: String = "")
